@@ -1,0 +1,25 @@
+name: "OneDrive File Downloader"
+description: "A custom action to download a file from OneDrive."
+author: "DevOps Visions"
+branding:
+  icon: 'download'
+  color: 'green'
+inputs:
+  azure_client_id:
+    description: "Azure Client ID"
+    required: true
+  azure_client_secret:
+    description: "Azure Client Secret"
+    required: true
+  azure_tenant_id:
+    description: "Azure Tenant ID"
+    required: true
+  onedrive_link:
+    description: "OneDrive Shareable Link"
+    required: true
+outputs:
+  file_name:
+    description: "The name of the downloaded file"
+runs:
+  using: "node20"
+  main: "src/app/index.js"
