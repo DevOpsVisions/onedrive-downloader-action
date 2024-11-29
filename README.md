@@ -1,4 +1,4 @@
-# Download Backup File
+# Download OneDrive File
 
 This action downloads a file from OneDrive and outputs its file name.
 
